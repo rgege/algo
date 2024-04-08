@@ -48,11 +48,13 @@ struct node *insertAfter(int v, struct node *n) {
     n->next = x;
     return x;
 }
-/* convention for dummy nodes were head points to the beginning of the
- * list rather than having a head node permits insert procedure insert
- * item to the beggining of the list (no need special test for beggining)
+/* convention for dummy nodes where head points to the beginning of the
+ * list rather than having a head node permits insert procedure to insert
+ * item at the beggining of the list (no need for special test for 
+ * beggining of ll)
  *
- * convention for tail protects the delete procedure from a call to delete
+ * convention for tail node protects the delete procedure from a call to 
+ * delete
  * an item from empty list.
  *
  * Another convention for terminating list is to make the sel node point
